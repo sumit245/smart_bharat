@@ -1,0 +1,44 @@
+[
+  {
+    "key": "research",
+    "title": "Research & Training",
+    "devanagari": "०१",
+    "summary": "Elevating the quality of nationalistic discourse through data, tools, and targeted training.",
+    "icon": "book",
+    "color": "navy",
+    "details": [
+      "Investigative research grants for member portals",
+      "Editorial standards workshops in 10 Bharatiya languages",
+      "Fact-checking and source verification training",
+      "Civilisational studies curriculum for working journalists"
+    ]
+  },
+  {
+    "key": "synergy",
+    "title": "Financial Synergy",
+    "devanagari": "०२",
+    "summary": "Resource sharing to ensure long-term sustainability and editorial independence.",
+    "icon": "rupee",
+    "color": "saffron",
+    "details": [
+      "Pooled advertising and sponsorship inventory",
+      "Shared studio, equipment, and software access",
+      "Donor and CSR partner introductions",
+      "Revenue-sharing on translated and syndicated content"
+    ]
+  },
+  {
+    "key": "amplification",
+    "title": "Amplification",
+    "devanagari": "०३",
+    "summary": "A unified network to ensure reach and frequency of common agendas.",
+    "icon": "megaphone",
+    "color": "navy",
+    "details": [
+      "Coordinated multi-portal publishing on national stories",
+      "Cross-language translation pipeline",
+      "Social media swarm + creator-led distribution",
+      "Member directory and discoverability platform"
+    ]
+  }
+]

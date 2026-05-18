@@ -1,0 +1,22 @@
+.DS_Store
+*.log
+node_modules/
+vendor/
+
+# Form captures (PII)
+app/data/contact.csv
+app/data/join.csv
+app/data/portal-waitlist.csv
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+#Agentic AI parts
+.claude/
+graphify-out/
+AGENTS.md
+DESIGN.md
+PRODUCT.md
+README.md

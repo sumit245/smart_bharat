@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 480" fill="none" aria-hidden="true">
+  <defs>
+    <radialGradient id="hub" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#1F3A5F"/>
+      <stop offset="1" stop-color="#0A1F44"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF9933"/>
+      <stop offset="1" stop-color="#FFC107"/>
+    </linearGradient>
+  </defs>
+
+  <!-- connector lines -->
+  <g stroke="url(#line)" stroke-width="1.4" fill="none" opacity="0.9">
+    <line x1="260" y1="240" x2="80" y2="80"/>
+    <line x1="260" y1="240" x2="80" y2="240"/>
+    <line x1="260" y1="240" x2="80" y2="400"/>
+    <line x1="260" y1="240" x2="180" y2="40"/>
+    <line x1="260" y1="240" x2="180" y2="440"/>
+    <line x1="260" y1="240" x2="340" y2="40"/>
+    <line x1="260" y1="240" x2="340" y2="440"/>
+    <line x1="260" y1="240" x2="440" y2="80"/>
+    <line x1="260" y1="240" x2="440" y2="240"/>
+    <line x1="260" y1="240" x2="440" y2="400"/>
+  </g>
+
+  <!-- peripheral nodes -->
+  <g fill="#FFFFFF" stroke="#0A1F44" stroke-width="1.5">
+    <circle cx="80" cy="80" r="22"/>
+    <circle cx="80" cy="240" r="22"/>
+    <circle cx="80" cy="400" r="22"/>
+    <circle cx="180" cy="40" r="22"/>
+    <circle cx="180" cy="440" r="22"/>
+    <circle cx="340" cy="40" r="22"/>
+    <circle cx="340" cy="440" r="22"/>
+    <circle cx="440" cy="80" r="22"/>
+    <circle cx="440" cy="240" r="22"/>
+    <circle cx="440" cy="400" r="22"/>
+  </g>
+
+  <!-- node icons (simple person glyph) -->
+  <g fill="#0A1F44">
+    <g transform="translate(80 80)"><circle cy="-5" r="4"/><path d="M-7 8 a7 7 0 0 1 14 0z"/></g>
+    <g transform="translate(80 240)"><circle cy="-5" r="4"/><path d="M-7 8 a7 7 0 0 1 14 0z"/></g>
+    <g transform="translate(80 400)"><circle cy="-5" r="4"/><path d="M-7 8 a7 7 0 0 1 14 0z"/></g>
+    <g transform="translate(180 40)"><circle cy="-5" r="4"/><path d="M-7 8 a7 7 0 0 1 14 0z"/></g>
+    <g transform="translate(180 440)"><circle cy="-5" r="4"/><path d="M-7 8 a7 7 0 0 1 14 0z"/></g>
+    <g transform="translate(340 40)"><circle cy="-5" r="4"/><path d="M-7 8 a7 7 0 0 1 14 0z"/></g>
+    <g transform="translate(340 440)"><circle cy="-5" r="4"/><path d="M-7 8 a7 7 0 0 1 14 0z"/></g>
+    <g transform="translate(440 80)"><circle cy="-5" r="4"/><path d="M-7 8 a7 7 0 0 1 14 0z"/></g>
+    <g transform="translate(440 240)"><circle cy="-5" r="4"/><path d="M-7 8 a7 7 0 0 1 14 0z"/></g>
+    <g transform="translate(440 400)"><circle cy="-5" r="4"/><path d="M-7 8 a7 7 0 0 1 14 0z"/></g>
+  </g>
+
+  <!-- central hub -->
+  <circle cx="260" cy="240" r="78" fill="url(#hub)"/>
+  <circle cx="260" cy="240" r="78" fill="none" stroke="#FF9933" stroke-width="2" opacity="0.6"/>
+  <g transform="translate(260 226)" text-anchor="middle">
+    <text font-family="Playfair Display, Georgia, serif" font-weight="700" font-size="22" fill="#FFFFFF">SMaRT</text>
+    <text y="20" font-family="Montserrat, sans-serif" font-size="9" letter-spacing="2" fill="#FF9933">FORCE MULTIPLIER</text>
+  </g>
+</svg>

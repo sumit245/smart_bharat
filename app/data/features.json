@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Member Portal",
+    "summary": "Secure login for media owners to access shared research and training assets.",
+    "icon": "lock"
+  },
+  {
+    "title": "Directory",
+    "summary": "Curated list of Approved Nationalistic Portals to help users find authentic content.",
+    "icon": "list"
+  },
+  {
+    "title": "Impact Counter",
+    "summary": "Live metrics on portals connected, combined reach, and journalists trained.",
+    "icon": "chart"
+  },
+  {
+    "title": "Mobile-First Design",
+    "summary": "70% of news is consumed on mobile; our platform is built for every device.",
+    "icon": "mobile"
+  }
+]

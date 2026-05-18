@@ -1,0 +1,14 @@
+[
+  {"name": "Bharat Voice Hindi", "language": "Hindi", "state": "Delhi", "url": "#", "type": "Portal"},
+  {"name": "Tamizh Sangam News", "language": "Tamil", "state": "Tamil Nadu", "url": "#", "type": "Portal"},
+  {"name": "Telugu Bhumi Today", "language": "Telugu", "state": "Andhra Pradesh", "url": "#", "type": "Portal"},
+  {"name": "Kerala Indic Daily", "language": "Malayalam", "state": "Kerala", "url": "#", "type": "Portal"},
+  {"name": "Karnataka Manyata", "language": "Kannada", "state": "Karnataka", "url": "#", "type": "Portal"},
+  {"name": "Odisha Swar", "language": "Odia", "state": "Odisha", "url": "#", "type": "Portal"},
+  {"name": "Banga Manch", "language": "Bengali", "state": "West Bengal", "url": "#", "type": "Portal"},
+  {"name": "Gujarat Smriti", "language": "Gujarati", "state": "Gujarat", "url": "#", "type": "Portal"},
+  {"name": "Sanskritam Vani", "language": "Sanskrit", "state": "Uttarakhand", "url": "#", "type": "Podcast"},
+  {"name": "Bharat English Review", "language": "English", "state": "Maharashtra", "url": "#", "type": "Portal"},
+  {"name": "Hindi Dharma Cast", "language": "Hindi", "state": "Uttar Pradesh", "url": "#", "type": "Podcast"},
+  {"name": "Indic YouTube Network", "language": "Multilingual", "state": "Pan-India", "url": "#", "type": "YouTube"}
+]

@@ -1,0 +1,14 @@
+{
+  "name": "SMaRT4Bharat",
+  "short_name": "SMaRT",
+  "description": "Force multiplier coalition for nationalistic Bharatiya media.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0A1F44",
+  "lang": "en-IN",
+  "icons": [
+    { "src": "/assets/img/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

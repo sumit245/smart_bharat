@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# AI / answer engine crawlers — explicitly allow
+User-agent: GPTBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://smart4bharat.com/sitemap.xml

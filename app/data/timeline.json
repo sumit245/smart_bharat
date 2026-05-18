@@ -1,0 +1,38 @@
+[
+  {
+    "year": "2020",
+    "devanagari": "२०२०",
+    "title": "Dusherra Launch",
+    "members": 25,
+    "reach": "30M",
+    "note": "Studios launched in 4 cities",
+    "icon": "launch"
+  },
+  {
+    "year": "2021",
+    "devanagari": "२०२१",
+    "title": "Coalition Grows",
+    "members": 60,
+    "reach": "80M",
+    "note": "60th media member onboarded",
+    "icon": "growth"
+  },
+  {
+    "year": "2023",
+    "devanagari": "२०२३",
+    "title": "Pan-India Reach",
+    "members": 220,
+    "reach": "200M+",
+    "note": "Members across 9 states",
+    "icon": "globe"
+  },
+  {
+    "year": "2024",
+    "devanagari": "२०२४",
+    "title": "Force Multiplier",
+    "members": 350,
+    "reach": "400M+",
+    "note": "10 Bharatiya languages, 10 states",
+    "icon": "amplify"
+  }
+]

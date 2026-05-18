@@ -1,0 +1,23 @@
+[
+  {
+    "key": "isolation",
+    "title": "Isolation",
+    "summary": "Small groups working in silos lose impact.",
+    "icon": "users",
+    "tone": "saffron"
+  },
+  {
+    "key": "reach",
+    "title": "Limited Reach",
+    "summary": "Important narratives get lost without frequency.",
+    "icon": "antenna",
+    "tone": "navy"
+  },
+  {
+    "key": "sustainability",
+    "title": "Sustainability",
+    "summary": "Financial hurdles shouldn't stop the truth.",
+    "icon": "rupee",
+    "tone": "saffron"
+  }
+]
