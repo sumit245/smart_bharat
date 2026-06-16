@@ -5,6 +5,9 @@ return [
         'description' => 'Samachar Manyata Association for Research and Training (SMaRT) is a force multiplier coalition uniting 350+ nationalistic media portals across 10 Bharatiya languages with research, financial synergy, and amplification.',
         'keywords' => 'nationalistic media India, Bharatiya media coalition, Indic journalism, SMaRT4Bharat, regional news network India',
         'image' => '/assets/img/og-default.jpg',
+        'image_width' => 1200,
+        'image_height' => 630,
+        'image_type' => 'image/jpeg',
     ],
     'pages' => [
         'home' => [

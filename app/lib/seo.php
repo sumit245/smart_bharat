@@ -10,13 +10,30 @@ function seo_for(string $key): array {
     return array_merge($seo['default'], $page, ['site' => $site['name'], 'url' => $site['url']]);
 }
 
+function request_origin(): string {
+    $site = config('site');
+    $host = $_SERVER['HTTP_HOST'] ?? '';
+    if (!is_string($host) || $host === '') return $site['url'];
+    $proto = $_SERVER['HTTP_X_FORWARDED_PROTO'] ?? null;
+    if (!is_string($proto) || $proto === '') {
+        $proto = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+    }
+    $proto = strtolower(explode(',', $proto)[0]);
+    if ($proto !== 'http' && $proto !== 'https') $proto = 'https';
+    return $proto . '://' . $host;
+}
+
 function render_head(string $pageKey, array $extra = []): void {
     $s = seo_for($pageKey);
+    $origin = request_origin();
     $site = config('site');
-    $canonical = $site['url'] . current_path();
+    $canonical = $origin . current_path();
     $title = $s['title'];
     $desc = $s['description'];
-    $img = $site['url'] . ($s['image'] ?? '/assets/img/og-default.jpg');
+    $img = $origin . ($s['image'] ?? '/assets/img/og-default.jpg');
+    $imgWidth = (string)($s['image_width'] ?? 1200);
+    $imgHeight = (string)($s['image_height'] ?? 630);
+    $imgType = (string)($s['image_type'] ?? 'image/jpeg');
     ?>
     <title><?= e($title) ?></title>
     <meta name="description" content="<?= e($desc) ?>">
@@ -30,6 +47,10 @@ function render_head(string $pageKey, array $extra = []): void {
     <meta property="og:description" content="<?= e($desc) ?>">
     <meta property="og:url" content="<?= e($canonical) ?>">
     <meta property="og:image" content="<?= e($img) ?>">
+    <meta property="og:image:secure_url" content="<?= e($img) ?>">
+    <meta property="og:image:type" content="<?= e($imgType) ?>">
+    <meta property="og:image:width" content="<?= e($imgWidth) ?>">
+    <meta property="og:image:height" content="<?= e($imgHeight) ?>">
     <meta property="og:locale" content="en_IN">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@SMaRT4Bharat">
@@ -49,7 +70,7 @@ function render_jsonld_organization(): void {
         'name' => $site['full_name'],
         'alternateName' => $site['name'],
         'url' => $site['url'],
-        'logo' => $site['url'] . '/assets/img/logo.svg',
+        'logo' => $site['url'] . '/assets/img/logo.png',
         'description' => 'Force multiplier coalition for nationalistic Bharatiya media.',
         'foundingDate' => $site['founded'],
         'email' => $site['email'],

@@ -3,7 +3,7 @@
 All SVG illustrations in `/public/assets/img/` are custom-authored for SMaRT4Bharat (Phase 1):
 
 - `chakra.svg` — 24-spoke Ashoka Chakra ornament, custom
-- `logo.svg` — SMaRT4Bharat mark, custom
+- `logo.png` — SMaRT4Bharat mark, custom
 - `toranna.svg` — Indic toranna arch divider, custom
 - `paisley.svg` — paisley watermark pattern, custom
 - `hero-art.svg` — Bharat skyline composite (India Gate, Taj dome, temple shikhara, antenna tower, studio block), custom

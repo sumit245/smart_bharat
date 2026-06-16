@@ -1,0 +1,31 @@
+.sumiicons-home {
+    display: inline-block;
+    position: relative;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    color: currentColor;
+}
+
+.sumiicons-home::before,
+.sumiicons-home::after {
+    content: "";
+    position: absolute;
+    background: currentColor;
+}
+
+.sumiicons-home::before {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 35%;
+    border-radius: 0.1em;
+}
+
+.sumiicons-home::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 35%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}

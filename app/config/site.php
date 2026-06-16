@@ -15,10 +15,11 @@ return [
         'instagram' => '#',
     ],
     'stats' => [
-        'portals' => 350,
+        'portals' => 650,
         'reach' => '400M+',
         'journalists' => 500,
         'states' => 10,
+        'languages' => 10,
     ],
     'founded' => '2020-10-25',
 ];

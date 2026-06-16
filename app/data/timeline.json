@@ -5,7 +5,7 @@
     "title": "Dusherra Launch",
     "members": 25,
     "reach": "30M",
-    "note": "Studios launched in 4 cities",
+    "note": "Founded on Dusherra with 25 members and members enabled studios in 4 cities",
     "icon": "launch"
   },
   {
@@ -14,7 +14,7 @@
     "title": "Coalition Grows",
     "members": 60,
     "reach": "80M",
-    "note": "60th media member onboarded",
+    "note": "80M+ combined reach",
     "icon": "growth"
   },
   {
@@ -23,7 +23,7 @@
     "title": "Pan-India Reach",
     "members": 220,
     "reach": "200M+",
-    "note": "Members across 9 states",
+    "note": "across 9 states, 10 languages",
     "icon": "globe"
   },
   {
@@ -32,7 +32,16 @@
     "title": "Force Multiplier",
     "members": 350,
     "reach": "400M+",
-    "note": "10 Bharatiya languages, 10 states",
+    "note": "400M+ reach",
+    "icon": "amplify"
+  },
+  {
+    "year": "2025-BEYOND",
+    "devanagari": "२०२५",
+    "title": "Force Multiplier",
+    "members": 650,
+    "reach": "400M+",
+    "note": "Doors open to Instagram creators. 650+ members. ",
     "icon": "amplify"
   }
 ]

@@ -9,7 +9,7 @@ require_once app_path('partials/icons.php');
     <div class="site-footer__top">
       <div class="site-footer__brand">
         <a href="/" class="brand" aria-label="<?= e($site['name']) ?> home">
-          <img src="<?= e(asset('/assets/img/logo.svg')) ?>" alt="" class="brand__mark" width="44" height="44">
+          <img src="<?= e(asset('/assets/img/logo.png')) ?>" alt="" class="brand__mark" width="44" height="44">
           <span class="brand__text">
             <span class="brand__name" style="color:#fff"><?= e($site['name']) ?></span>
             <span class="brand__sub" style="color:rgba(255,255,255,0.55)">For Research &amp; Training</span>

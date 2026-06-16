@@ -11,8 +11,8 @@ require_once app_path('partials/icons.php');
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="icon" type="image/svg+xml" href="<?= e(asset('/assets/img/logo.svg')) ?>">
-  <link rel="apple-touch-icon" href="<?= e(asset('/assets/img/logo.svg')) ?>">
+  <link rel="icon" type="image/png" href="<?= e(asset('/assets/img/logo.png')) ?>">
+  <link rel="apple-touch-icon" href="<?= e(asset('/assets/img/logo.png')) ?>">
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

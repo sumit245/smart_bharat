@@ -1,22 +1,22 @@
 [
   {
     "key": "isolation",
-    "title": "Isolation",
-    "summary": "Small groups working in silos lose impact.",
+    "title": "You Shouldn't Stand Alone",
+    "summary": "Independent Creators get trolled, threatened, and legally harassed. SMaRT has your back.",
     "icon": "users",
     "tone": "saffron"
   },
   {
     "key": "reach",
-    "title": "Limited Reach",
-    "summary": "Important narratives get lost without frequency.",
+    "title": "Culture Deserves Airtime",
+    "summary": "The stories that matter most — temples, traditions, civilisational heritage — rarely trend on their own. We facilitate campaign support ",
     "icon": "antenna",
     "tone": "navy"
   },
   {
     "key": "sustainability",
-    "title": "Sustainability",
-    "summary": "Financial hurdles shouldn't stop the truth.",
+    "title": "Great Content Deserves Funding",
+    "summary": "SMaRT offers research grants for creators producing content on pro-India & Cultural topics.",
     "icon": "rupee",
     "tone": "saffron"
   }

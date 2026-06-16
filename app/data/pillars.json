@@ -1,9 +1,9 @@
 [
   {
     "key": "research",
-    "title": "Research & Training",
+    "title": "Research Grants",
     "devanagari": "०१",
-    "summary": "Elevating the quality of nationalistic discourse through data, tools, and targeted training.",
+    "summary": "Funding for creators producing content on India's history, culture, and civilisational heritage.",
     "icon": "book",
     "color": "navy",
     "details": [
@@ -15,10 +15,10 @@
   },
   {
     "key": "synergy",
-    "title": "Financial Synergy",
+    "title": "Legal Support",
     "devanagari": "०२",
-    "summary": "Resource sharing to ensure long-term sustainability and editorial independence.",
-    "icon": "rupee",
+    "summary": "When platforms or adversaries try to silence you, SMaRT provides legal backing",
+    "icon": "shield",
     "color": "saffron",
     "details": [
       "Pooled advertising and sponsorship inventory",
@@ -29,16 +29,44 @@
   },
   {
     "key": "amplification",
-    "title": "Amplification",
+    "title": "Literary & Cultural Presence",
     "devanagari": "०३",
-    "summary": "A unified network to ensure reach and frequency of common agendas.",
-    "icon": "megaphone",
+    "summary": "Book launches, lit fest collaborations, and cultural events that put your work in front of the right audiences.",
+    "icon": "book",
     "color": "navy",
     "details": [
       "Coordinated multi-portal publishing on national stories",
       "Cross-language translation pipeline",
       "Social media swarm + creator-led distribution",
       "Member directory and discoverability platform"
+    ]
+  },
+  {
+    "key": "training",
+    "title": "Cultural Immersions",
+    "devanagari": "०४",
+    "summary": "Ashram retreats and temple tours — lived experiences of Bharat that no studio can replicate.",
+    "icon": "graduation-cap",
+    "color": "saffron",
+    "details": [
+      "Mentorship from senior journalists and editors",
+      "Workshops on content strategy and audience engagement",
+      "Training on digital tools and platforms",
+      "Access to a network of experienced creators"
+    ]
+  },
+  {
+    "key": "networking",
+    "title": "Amplification",
+    "devanagari": "०५",
+    "summary": "Coordinated reach across 650+ creators & authors and 400M+ audiences. ",
+    "icon": "users",
+    "color": "navy",
+    "details": [
+      "Regular networking events and meetups",
+      "Collaboration opportunities with other members",
+      "Access to a community forum for idea exchange",
+      "Partnerships with industry experts and influencers"
     ]
   }
 ]
