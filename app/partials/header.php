@@ -90,4 +90,71 @@ require_once app_path('partials/icons.php');
     </div>
   </aside>
 
+  <!-- ===== 5th Anniversary Popup ===== -->
+  <div id="anniv-popup" class="anniv-overlay" role="dialog" aria-modal="true" aria-labelledby="anniv-title" hidden>
+    <div class="anniv-backdrop"></div>
+    <div class="anniv-card">
+
+      <!-- Sparkle particles -->
+      <div class="anniv-sparks" aria-hidden="true">
+        <?php for ($i = 1; $i <= 18; $i++): ?>
+          <span class="spark spark--<?= $i ?>"></span>
+        <?php endfor; ?>
+      </div>
+
+      <!-- Close -->
+      <button class="anniv-close" id="anniv-close" aria-label="Close anniversary popup" type="button">
+        <?php icon('close', ['width' => 20, 'height' => 20]); ?>
+      </button>
+
+      <!-- Gold arc -->
+      <div class="anniv-arc" aria-hidden="true">
+        <svg viewBox="0 0 560 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 130 Q280 -20 540 130" stroke="url(#arcGold)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <defs>
+            <linearGradient id="arcGold" x1="0" y1="0" x2="560" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#B8860B" stop-opacity="0"/>
+              <stop offset="30%" stop-color="#FFD700"/>
+              <stop offset="50%" stop-color="#FFC107"/>
+              <stop offset="70%" stop-color="#FFD700"/>
+              <stop offset="100%" stop-color="#B8860B" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <!-- Logo mark -->
+      <div class="anniv-logo">
+        <img src="<?= e(asset('/assets/img/logo.png')) ?>" alt="SMaRT logo" width="80" height="80">
+      </div>
+
+      <!-- Badge -->
+      <div class="anniv-badge" aria-hidden="true">5TH YEAR</div>
+
+      <!-- Headline -->
+      <h2 id="anniv-title" class="anniv-title">
+        <span class="anniv-title__smart">SMaRT</span>
+        <span class="anniv-title__summit">Summit</span>
+      </h2>
+
+      <!-- Anniversary line -->
+      <div class="anniv-rule">
+        <span class="anniv-rule__line"></span>
+        <span class="anniv-rule__text">5TH ANNIVERSARY</span>
+        <span class="anniv-rule__line"></span>
+      </div>
+
+      <!-- Sub copy -->
+      <p class="anniv-sub">Five years of backing India's most authentic voices.<br>One summit to celebrate every voice that stood firm.</p>
+
+      <!-- CTAs -->
+      <div class="anniv-ctas">
+        <a href="/join" class="btn btn--primary anniv-btn-join">Join the Summit</a>
+        <button type="button" class="anniv-btn-skip" id="anniv-skip">Maybe Later</button>
+      </div>
+
+    </div>
+  </div>
+  <!-- ===== /5th Anniversary Popup ===== -->
+
   <main id="main">

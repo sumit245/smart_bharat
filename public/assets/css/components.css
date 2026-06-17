@@ -1350,3 +1350,311 @@
     display: none;
   }
 }
+
+/* ============================================================
+   5TH ANNIVERSARY POPUP
+   ============================================================ */
+
+/* Overlay */
+.anniv-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.anniv-overlay[hidden] { display: none; }
+
+/* Backdrop */
+.anniv-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 8, 28, 0.88);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.anniv-overlay.is-open .anniv-backdrop { opacity: 1; }
+
+/* Card */
+.anniv-card {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  background: linear-gradient(155deg, #0A1F44 0%, #000080 50%, #0A1F44 100%);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 193, 7, 0.25);
+  box-shadow:
+    0 0 0 1px rgba(255,193,7,0.08),
+    0 32px 80px rgba(0,0,0,0.6),
+    0 0 60px rgba(255,153,51,0.12) inset;
+  padding: 3rem 2.5rem 2.5rem;
+  text-align: center;
+  overflow: hidden;
+  transform: scale(0.8) translateY(24px);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1),
+              opacity 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.anniv-overlay.is-open .anniv-card {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+/* Radial glow behind logo */
+.anniv-card::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(ellipse at center,
+    rgba(255,193,7,0.18) 0%,
+    rgba(255,153,51,0.08) 40%,
+    transparent 70%);
+  pointer-events: none;
+}
+
+/* Gold shimmer sweep */
+.anniv-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%; width: 60%; height: 100%;
+  background: linear-gradient(105deg,
+    transparent 40%,
+    rgba(255,215,0,0.06) 50%,
+    transparent 60%);
+  animation: shimmerSweep 3.5s ease-in-out 1s infinite;
+  pointer-events: none;
+}
+@keyframes shimmerSweep {
+  0%   { left: -100%; }
+  100% { left: 160%; }
+}
+
+/* Close button */
+.anniv-close {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,193,7,0.3);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.7);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  z-index: 2;
+}
+.anniv-close:hover { background: rgba(255,193,7,0.15); color: #fff; transform: rotate(90deg); }
+
+/* Gold arc */
+.anniv-arc {
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 90%; max-width: 500px;
+  pointer-events: none;
+  z-index: 0;
+}
+.anniv-arc svg { width: 100%; display: block; }
+
+/* Logo */
+.anniv-logo {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+.anniv-logo img {
+  width: 72px; height: 72px;
+  filter: drop-shadow(0 0 16px rgba(255,153,51,0.5));
+  animation: logoPulse 2.8s ease-in-out infinite;
+}
+@keyframes logoPulse {
+  0%, 100% { filter: drop-shadow(0 0 14px rgba(255,153,51,0.5)); }
+  50%       { filter: drop-shadow(0 0 28px rgba(255,193,7,0.8)); }
+}
+
+/* Year badge */
+.anniv-badge {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  font-family: var(--f-body);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #FFC107;
+  background: rgba(255,193,7,0.1);
+  border: 1px solid rgba(255,193,7,0.35);
+  border-radius: 100px;
+  padding: 0.25rem 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Headline */
+.anniv-title {
+  position: relative;
+  z-index: 1;
+  font-family: var(--f-body);
+  font-size: clamp(2.25rem, 7vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.01em;
+}
+.anniv-title__smart {
+  color: #fff;
+  display: inline;
+}
+.anniv-title__summit {
+  background: linear-gradient(135deg, #FFD700 0%, #FFC107 40%, #FF9933 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline;
+  margin-left: 0.35em;
+}
+
+/* Anniversary rule */
+.anniv-rule {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: center;
+  margin: 0.5rem 0 1.25rem;
+}
+.anniv-rule__line {
+  flex: 1;
+  max-width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #FFD700 80%);
+}
+.anniv-rule__line:last-child {
+  background: linear-gradient(90deg, #FFD700 20%, transparent);
+}
+.anniv-rule__text {
+  font-family: var(--f-body);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #FFD700;
+}
+
+/* Sub copy */
+.anniv-sub {
+  position: relative;
+  z-index: 1;
+  color: rgba(255,255,255,0.7);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  margin: 0 0 2rem;
+}
+
+/* CTAs */
+.anniv-ctas {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+.anniv-btn-join {
+  width: 100%;
+  max-width: 280px;
+  background: linear-gradient(135deg, #FF9933 0%, #FFC107 100%);
+  color: #0A1F44;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 4px 20px rgba(255,153,51,0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.anniv-btn-join:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(255,153,51,0.55);
+  color: #0A1F44;
+}
+.anniv-btn-skip {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.45);
+  font-family: var(--f-body);
+  font-size: 0.8125rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s;
+}
+.anniv-btn-skip:hover { color: rgba(255,255,255,0.75); }
+
+/* Sparkle particles */
+.anniv-sparks {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.spark {
+  position: absolute;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  opacity: 0;
+  animation: sparkFloat var(--dur, 3s) var(--delay, 0s) ease-in-out infinite;
+}
+.spark::after {
+  content: '✦';
+  position: absolute;
+  font-size: var(--sz, 10px);
+  color: #FFD700;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: inherit;
+}
+@keyframes sparkFloat {
+  0%   { transform: translate(var(--x,0px), 40px) scale(0); opacity: 0; }
+  20%  { opacity: 0.9; }
+  80%  { opacity: 0.4; }
+  100% { transform: translate(calc(var(--x,0px) + var(--dx,20px)), -120px) scale(0.5); opacity: 0; }
+}
+
+.spark--1  { --x:-80px;  --dx: 30px; --dur:3.2s; --delay:0.0s; --sz:8px;  left:20%;  bottom:10%; }
+.spark--2  { --x: 60px;  --dx:-25px; --dur:2.8s; --delay:0.3s; --sz:12px; left:75%;  bottom:5%;  }
+.spark--3  { --x:-20px;  --dx: 15px; --dur:3.6s; --delay:0.6s; --sz:7px;  left:40%;  bottom:15%; }
+.spark--4  { --x: 40px;  --dx:-40px; --dur:2.5s; --delay:0.9s; --sz:10px; left:60%;  bottom:20%; }
+.spark--5  { --x:-50px;  --dx: 50px; --dur:3.9s; --delay:1.2s; --sz:6px;  left:10%;  bottom:30%; }
+.spark--6  { --x: 70px;  --dx:-30px; --dur:3.1s; --delay:0.2s; --sz:9px;  left:85%;  bottom:8%;  }
+.spark--7  { --x:-15px;  --dx: 20px; --dur:4.0s; --delay:1.5s; --sz:11px; left:30%;  bottom:0%;  }
+.spark--8  { --x: 45px;  --dx:-15px; --dur:2.7s; --delay:0.8s; --sz:7px;  left:55%;  bottom:12%; }
+.spark--9  { --x:-35px;  --dx: 35px; --dur:3.3s; --delay:1.1s; --sz:8px;  left:15%;  bottom:25%; }
+.spark--10 { --x: 55px;  --dx:-45px; --dur:3.7s; --delay:0.4s; --sz:10px; left:70%;  bottom:18%; }
+.spark--11 { --x:-65px;  --dx: 60px; --dur:2.9s; --delay:1.7s; --sz:6px;  left:5%;   bottom:5%;  }
+.spark--12 { --x: 25px;  --dx:-20px; --dur:4.2s; --delay:0.7s; --sz:12px; left:45%;  bottom:22%; }
+.spark--13 { --x:-30px;  --dx: 25px; --dur:3.4s; --delay:2.0s; --sz:9px;  left:25%;  bottom:2%;  }
+.spark--14 { --x: 75px;  --dx:-55px; --dur:2.6s; --delay:1.3s; --sz:7px;  left:80%;  bottom:28%; }
+.spark--15 { --x:-45px;  --dx: 40px; --dur:3.8s; --delay:0.5s; --sz:11px; left:35%;  bottom:8%;  }
+.spark--16 { --x: 35px;  --dx:-35px; --dur:3.0s; --delay:1.9s; --sz:6px;  left:65%;  bottom:35%; }
+.spark--17 { --x:-10px;  --dx: 10px; --dur:4.5s; --delay:1.0s; --sz:8px;  left:50%;  bottom:14%; }
+.spark--18 { --x: 60px;  --dx:-60px; --dur:2.4s; --delay:2.2s; --sz:10px; left:90%;  bottom:3%;  }
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+  .anniv-card { padding: 2.5rem 1.5rem 2rem; }
+  .anniv-title { font-size: 2rem; }
+  .anniv-sub { font-size: 0.875rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anniv-card::after, .spark, .anniv-logo img { animation: none; }
+  .anniv-card { transition: opacity 0.2s; transform: none; }
+}

@@ -102,9 +102,12 @@
     if ('IntersectionObserver' in window && !reduceMotion) {
       const sectionObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-          entry.target.classList.toggle('is-section-visible', entry.isIntersecting);
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-section-visible');
+            sectionObserver.unobserve(entry.target);
+          }
         });
-      }, { rootMargin: '-14% 0px -18% 0px', threshold: 0.18 });
+      }, { rootMargin: '0px 0px -5% 0px', threshold: 0.05 });
       motionSections.forEach(section => sectionObserver.observe(section));
     } else {
       motionSections.forEach(section => section.classList.add('is-section-visible'));
@@ -230,5 +233,23 @@
     };
     passwordInput.addEventListener('input', updatePasswordHint);
     updatePasswordHint();
+  }
+
+  // ---- 5th Anniversary Popup ----
+  const annivPopup = document.getElementById('anniv-popup');
+  if (annivPopup && !sessionStorage.getItem('anniv5_seen')) {
+    setTimeout(() => {
+      annivPopup.hidden = false;
+      requestAnimationFrame(() => annivPopup.classList.add('is-open'));
+    }, 600);
+    const closeAnniv = () => {
+      annivPopup.classList.remove('is-open');
+      sessionStorage.setItem('anniv5_seen', '1');
+      setTimeout(() => { annivPopup.hidden = true; }, 500);
+    };
+    document.getElementById('anniv-close')?.addEventListener('click', closeAnniv);
+    document.getElementById('anniv-skip')?.addEventListener('click', closeAnniv);
+    annivPopup.querySelector('.anniv-backdrop')?.addEventListener('click', closeAnniv);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeAnniv(); });
   }
 })();
