@@ -14,8 +14,8 @@ partial('header', compact('pageKey', 'extraJsonLd'));
 <section class="page-head">
   <div class="container">
     <nav class="page-head__crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / Our Pillars</nav>
-    <h1>Three Pillars of Support</h1>
-    <p>Research &amp; Training, Financial Synergy, and Amplification — the structural support every coalition member receives.</p>
+    <h1>What SMaRT Does for Its Members</h1>
+    <p>Five active programmes. One free membership.</p>
   </div>
 </section>
 
@@ -26,7 +26,7 @@ partial('header', compact('pageKey', 'extraJsonLd'));
       <div class="<?= $i % 2 === 1 ? 'order-2' : '' ?>">
         <span class="devnum" style="font-size:1.75rem"><?= e($p['devanagari']) ?></span>
         <h2 style="margin-top:0.5rem"><?= e($p['title']) ?></h2>
-        <p class="muted"><?= e($p['summary']) ?></p>
+        <p class="muted"><?= e($p['description']) ?></p>
         <ul style="margin-top:1rem;list-style:none;padding:0;display:grid;gap:0.75rem">
           <?php foreach ($p['details'] as $d): ?>
           <li style="display:flex;gap:0.75rem;align-items:flex-start">

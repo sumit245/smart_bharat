@@ -14,8 +14,8 @@ partial('header', compact('pageKey', 'extraJsonLd'));
 <section class="page-head">
   <div class="container">
     <nav class="page-head__crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / News &amp; Events</nav>
-    <h1>News &amp; Events</h1>
-    <p>Coalition milestones, member spotlights, and upcoming events.</p>
+    <h1>What's Happening at SMaRT</h1>
+    <p>Summits, book launches, literary festivals, and milestones from India's largest creator network.</p>
   </div>
 </section>
 

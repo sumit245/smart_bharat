@@ -4,6 +4,7 @@
     "title": "Research Grants",
     "devanagari": "०१",
     "summary": "Funding for creators producing content on India's history, culture, and civilisational heritage.",
+    "description": "SMaRT funds creators producing videos and content on pro-India topics — history, culture, heritage, and civilisational knowledge. Apply through the member portal after joining.",
     "icon": "book",
     "color": "navy",
     "details": [
@@ -18,6 +19,7 @@
     "title": "Legal Support",
     "devanagari": "०२",
     "summary": "When platforms or adversaries try to silence you, SMaRT provides legal backing",
+    "description": "A creator's voice should not cost them their livelihood. SMaRT provides legal advisory support when creators face notices, bans, or coordinated suppression.",
     "icon": "shield",
     "color": "saffron",
     "details": [
@@ -32,6 +34,7 @@
     "title": "Literary & Cultural Presence",
     "devanagari": "०३",
     "summary": "Book launches, lit fest collaborations, and cultural events that put your work in front of the right audiences.",
+    "description": "From co-hosting literary festivals to supporting book launches, SMaRT brings its members onto stages that matter",
     "icon": "book",
     "color": "navy",
     "details": [
@@ -46,6 +49,7 @@
     "title": "Cultural Immersions",
     "devanagari": "०४",
     "summary": "Ashram retreats and temple tours — lived experiences of Bharat that no studio can replicate.",
+    "description": "Ashram retreats and temple tours open to members. Designed to reconnect creators with Bharat's living heritage",
     "icon": "graduation-cap",
     "color": "saffron",
     "details": [
@@ -60,6 +64,7 @@
     "title": "Amplification",
     "devanagari": "०५",
     "summary": "Coordinated reach across 650+ creators & authors and 400M+ audiences. ",
+    "description": "Issue briefs, editorial workshops, coordinated campaigns, and a network of 650+ creators ready to amplify what deserves to be heard.",
     "icon": "users",
     "color": "navy",
     "details": [

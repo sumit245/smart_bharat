@@ -15,12 +15,16 @@ require_once app_path('partials/icons.php');
             <span class="brand__sub" style="color:rgba(255,255,255,0.55)">For Research &amp; Training</span>
           </span>
         </a>
-        <p>Force multiplier coalition for nationalistic Bharatiya media. United voice across 10 languages.</p>
+        <p>India's network of independent Bharatiya voices. Free to join. Built to last.</p>
         <div class="site-footer__socials" aria-label="Social links">
-          <a href="<?= e($site['social']['twitter']) ?>" aria-label="Twitter" rel="noopener" target="_blank"><?php icon('twitter', ['width' => 18, 'height' => 18]); ?></a>
-          <a href="<?= e($site['social']['facebook']) ?>" aria-label="Facebook" rel="noopener" target="_blank"><?php icon('facebook', ['width' => 18, 'height' => 18]); ?></a>
-          <a href="<?= e($site['social']['youtube']) ?>" aria-label="YouTube" rel="noopener" target="_blank"><?php icon('youtube', ['width' => 18, 'height' => 18]); ?></a>
-          <a href="<?= e($site['social']['instagram']) ?>" aria-label="Instagram" rel="noopener" target="_blank"><?php icon('instagram', ['width' => 18, 'height' => 18]); ?></a>
+          <a href="<?= e($site['social']['twitter']) ?>" aria-label="Twitter" rel="noopener"
+            target="_blank"><?php icon('twitter', ['width' => 18, 'height' => 18]); ?></a>
+          <a href="<?= e($site['social']['facebook']) ?>" aria-label="Facebook" rel="noopener"
+            target="_blank"><?php icon('facebook', ['width' => 18, 'height' => 18]); ?></a>
+          <a href="<?= e($site['social']['youtube']) ?>" aria-label="YouTube" rel="noopener"
+            target="_blank"><?php icon('youtube', ['width' => 18, 'height' => 18]); ?></a>
+          <a href="<?= e($site['social']['instagram']) ?>" aria-label="Instagram" rel="noopener"
+            target="_blank"><?php icon('instagram', ['width' => 18, 'height' => 18]); ?></a>
         </div>
       </div>
 
@@ -49,20 +53,25 @@ require_once app_path('partials/icons.php');
       <div>
         <h4 class="is-saffron">Contact Us</h4>
         <ul>
-          <li class="site-footer__contact-row"><?php icon('mail', ['width' => 18, 'height' => 18]); ?><a href="mailto:<?= e($site['email']) ?>"><?= e($site['email']) ?></a></li>
-          <li class="site-footer__contact-row"><?php icon('phone', ['width' => 18, 'height' => 18]); ?><a href="tel:<?= e(preg_replace('/\s+/', '', $site['phone'])) ?>"><?= e($site['phone']) ?></a></li>
-          <li class="site-footer__contact-row"><?php icon('pin', ['width' => 18, 'height' => 18]); ?><span><?= e($site['address']) ?></span></li>
+          <li class="site-footer__contact-row"><?php icon('mail', ['width' => 18, 'height' => 18]); ?><a
+              href="mailto:<?= e($site['email']) ?>"><?= e($site['email']) ?></a></li>
+          <li class="site-footer__contact-row"><?php icon('phone', ['width' => 18, 'height' => 18]); ?><a
+              href="tel:<?= e(preg_replace('/\s+/', '', $site['phone'])) ?>"><?= e($site['phone']) ?></a></li>
+          <li class="site-footer__contact-row">
+            <?php icon('pin', ['width' => 18, 'height' => 18]); ?><span><?= e($site['address']) ?></span>
+          </li>
         </ul>
       </div>
     </div>
 
     <div class="site-footer__bottom">
       <span>&copy; <?= date('Y') ?> Samachar Manyata Association for Research and Training. All rights reserved.</span>
-      <span>Advancing Indic Knowledge &amp; Virtues to Bharat.</span>
+      <span>Powered by <a href="https://dashandots.com" target="_blank">Dashandots Technology</a></span>
     </div>
   </div>
 </footer>
 
 <script src="<?= e(asset('/assets/js/main.js')) ?>" defer></script>
 </body>
+
 </html>
