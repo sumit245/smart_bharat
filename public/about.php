@@ -71,7 +71,7 @@ $supportAreas = [
         <!-- <p>Samachar Manyata Association for Research and Training exists to help nationalistic media organisations, regional news portals, YouTube channels, cartoonists, meme pages, print publications, knowledge partners, and friends of SMaRT collaborate without becoming dependent on a single editorial command.</p> -->
       </div>
       <div class="mission__diagram reveal" aria-hidden="true">
-        <?= file_get_contents(app_root() . '/public/assets/img/force-multiplier.svg') ?>
+        <?= file_get_contents(__DIR__ . '/assets/img/force-multiplier.svg') ?>
       </div>
     </div>
   </div>

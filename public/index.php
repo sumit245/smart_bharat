@@ -40,7 +40,7 @@ partial('header', compact('pageKey', 'extraJsonLd'));
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero__paisley" aria-hidden="true"></div>
   <div class="hero__chakra-bg" aria-hidden="true">
-    <?= file_get_contents(app_root() . '/public/assets/img/chakra.svg') ?>
+    <?= file_get_contents(__DIR__ . '/assets/img/chakra.svg') ?>
   </div>
   <div class="container hero__inner">
     <div class="reveal">
@@ -110,7 +110,7 @@ partial('header', compact('pageKey', 'extraJsonLd'));
             aria-hidden="true">→</span></a>
       </div>
       <div class="mission__diagram reveal" aria-hidden="true">
-        <?= file_get_contents(app_root() . '/public/assets/img/force-multiplier.svg') ?>
+        <?= file_get_contents(__DIR__ . '/assets/img/force-multiplier.svg') ?>
       </div>
     </div>
   </div>
